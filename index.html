@@ -13,50 +13,6 @@
         window.location.href = "https://www.google.com/search?q="+searchQuery;
     }
 }
-</script>
-    <style>
-      body {
-        background-color: #353535;
-      }
-      footer {
-  padding: 0px;
-  color: white;
-     position:absolute;
-   bottom:0;
-   width:50%;
-   height:50px; 
-}
-button {
-  background-color: #ff8100; /* Green */
-  border: none;
-  color: white;
-height: 34px; border-radius: 10px  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;}
-  button:hover {
-        cursor: hand;
-  }
-    </style>
-<center>
-        <br><br><br><br>
-    <img src="https://cdn.discordapp.com/attachments/906170393004490752/917544549012885514/costume4_1.png" alt="Skrak Logo" width="400" height="100">
-    <br><br><br><br><br><br><br><br>
-<input type="text" name="search" id="search" oninput="gopls()" placeholder="Skrak tal vefa!" style="height: 35px; width: 35%; border-radius: 10px" required=""><script>function getQuery() {
-    var searchQuery = document.getElementById("search").value.toLowerCase();
-    
-    if(searchQuery === ""){
-        window.alert("Funt: dah skrak!")
-    }else if(searchQuery.substring(0,8) == "https://"){
-        window.location.href = "https://"+searchQuery.substring(8);
-    }else if(searchQuery.substring(0,7) == "http://"){
-        window.location.href = "http://"+searchQuery.substring(7);
-    }else if(searchQuery.substring(0,7) == "[wiki] "){
-        window.location.href = "https://en.m.wikipedia.org/w/index.php?search="+searchQuery.substring(7);
-    }else{
-        window.location.href = "https://www.google.com/search?q="+searchQuery;
-    }
-}
 function gopls() {
     document.getElementById("search").addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
@@ -96,11 +52,6 @@ height: 34px; border-radius: 10px  text-align: center;
     <br><br><br><br><br><br><br><br>
 <input type="text" name="search" id="search" oninput="gopls()" placeholder="Skrak tal vefa!" style="height: 35px; width: 35%; border-radius: 10px" required="">
 <button type="button" onclick="getQuery()" id="skrak">Skrak</button>
- </center>
-<footer>
-  <p>*Google ti koob Kylese</p>
-</footer>
-<button type="button" onclick="getQuery()">Skrak</button>
  </center>
 <footer>
   <p>*Google ti koob Kylese</p>
